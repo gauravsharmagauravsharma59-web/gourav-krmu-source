@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <button id="btn" oneclick="handleClick()">Click Me</button>
+
+    <!----add a h1 tag and button and when user click on the button the color of h1 will change -->
+        <h1 id="heading">Hello World</h1>
+        <button id="colorBtn" onclick="changeColor()">Change Color</button>
+    
+        <script>
+            function changeColor() {
+                document.getElementById("heading").style.color = "red";
+            }
+        </script>
+
+
+    <!---create a button and when user click on button one h2 tag with text and image will render below to the button-->
+    <button id="renderBtn" onclick="renderContent()">Render Content</button>
+    <div id="content"></div>
+    <script>
+        function renderContent() {
+            const contentDiv = document.getElementById("content");
+            contentDiv.innerHTML = "<h2>This is a dynamically rendered heading</h2><img src='https://www.w3schools.com/js/img_javascript_480.jpg' alt='Placeholder Image'>";
+        }
+    </script>
+
+   <script src="script.js"></script>
+</body>
+</html>
