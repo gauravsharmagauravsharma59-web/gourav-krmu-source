@@ -1,3 +1,11 @@
+// console.log(starting);
+// function dowork() {
+//     setTimeout(() => {
+//         console.log("Work is done!");
+        
+//     }, 1000);}
+
+
 function login(email,pass,cb){
     setTimeout(() => {
         cb({userID:email,isloggedIn:true,message:"login :successfully"})
